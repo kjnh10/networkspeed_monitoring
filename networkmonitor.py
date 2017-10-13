@@ -9,6 +9,6 @@ while True:
         upspeed = re.search("[0-9]*\.[0-9]* Mbit/s", output[output.find("Upload:"):]).group()
         now = datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S')
         weekday = datetime.datetime.now().strftime('%a')
-        f.write(now + "," + weekday + "," + downspeed.replace(" ", ",") + "," + upspeed.replace(" ", ",")\n)
+        f.write(now + "," + weekday + "," + downspeed.replace(" ", ",") + "," + upspeed.replace(" ", ",") + \n)
         print("Done")
         time.sleep(60)
